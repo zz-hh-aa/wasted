@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
+    "./**/*.{html,js}",
   ],
   theme: {
     extend: {
       colors: {
-        wasted_grey: "#rgb(119, 116, 116)",
-        wasted_green: "#rgb(71, 74, 30)",
+        'wasted-grey': "rgb(119, 116, 116)",
+        'wasted-green': "rgb(71, 74, 30)",
       },
     },
   },
