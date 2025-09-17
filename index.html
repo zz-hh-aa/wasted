@@ -6,6 +6,7 @@
     <title>wasted</title>
     <link rel="stylesheet" href="output.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,12 @@
                 const response = await fetch(filePath);
                 const text = await response.text();
                 const parsedContent = marked.parse(text);
-                document.getElementById(elementId).innerHTML = parsedContent;
+                const sanitizedContent = DOMPurify.sanitize(parsedContent, {
+                    USE_PROFILES: { html: true },
+                    FORBID_TAGS: ['script', 'style', 'iframe', 'frame', 'object', 'embed'],
+                    FORBID_ATTR: ['onerror', 'onload', 'onclick', 'onmouseover']
+                });
+                document.getElementById(elementId).innerHTML = sanitizedContent;
             } catch (error) {
                 console.error(`Error loading markdown from ${filePath}:`, error);
             }
