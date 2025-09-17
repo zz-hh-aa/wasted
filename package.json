@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "marked": "^16.3.0"
+    "@tailwindcss/cli": "^4.1.13",
+    "marked": "^16.3.0",
+    "tailwindcss": "^4.1.13"
   }
 }
