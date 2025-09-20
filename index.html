@@ -9,24 +9,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <h1>wasted</h1>
+<body class="min-h-screen flex flex-col">
+    <header class="flex flex-col md:flex-row m-0">
+        <div class="w-full md:w-1/2 bg-wasted-grey">
+            <h1 class="text-4xl">wasted</h1>
+        </div>
+        <div class="w-full md:w-1/2 bg-wasted-grey md:bg-wasted-green md:h-full">
+            <!-- Spacer div to maintain header height on right side -->
+            <div class="h-[52px]"></div>
+        </div>
     </header>
-    <main>
-        <div class="flex flex-col md:flex-row h-full">
-        <section class="w-full md:w-1/2 md:h-full bg-wasted-grey p-6">
+    
+    <main class="flex-grow flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 bg-wasted-grey p-6">
             <h2 class="text-3xl my-4">Hospicing Dance Music</h2>
             <div id="hospicing-content" class="markdown-content"></div>
-        </section>
-        <section class="w-full md:w-1/2 md:h-full bg-wasted-green p-6">
+        </div>
+        <div class="w-full md:w-1/2 bg-wasted-green p-6">
             <h2 class="text-3xl my-4">Unsustainability</h2>
             <div id="unsustainability-content" class="markdown-content"></div>
-        </section>
         </div>
     </main>
-    <footer>
-        <p>credits</p>
+
+    <footer class="flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 bg-wasted-green md:bg-wasted-grey">
+            <p>credits</p>
+        </div>
+        <div class="md:w-1/2 md:bg-wasted-green">
+        </div>
     </footer>
     
     <script>
