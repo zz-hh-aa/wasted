@@ -724,14 +724,13 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-auto {
@@ -746,16 +745,16 @@ video {
   margin-top: 0.5rem;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -869,32 +868,28 @@ video {
   height: 52px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[10rem\] {
-  height: 10rem;
-}
-
-.h-\[6rem\] {
-  height: 6rem;
-}
-
-.h-\[8rem\] {
-  height: 8rem;
+.h-\[5rem\] {
+  height: 5rem;
 }
 
 .h-\[7rem\] {
   height: 7rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
+}
+
 .h-\[4rem\] {
   height: 4rem;
 }
 
-.h-\[5rem\] {
-  height: 5rem;
+.h-\[3rem\] {
+  height: 3rem;
 }
 
 .min-h-screen {
@@ -1983,12 +1978,12 @@ video {
   background-origin: content-box;
 }
 
-.fill-wasted-grey {
-  fill: #fefefe;
-}
-
 .fill-wasted-green {
   fill: #91992d;
+}
+
+.fill-wasted-grey {
+  fill: #fefefe;
 }
 
 .object-contain {
@@ -2016,16 +2011,16 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-1 {
@@ -2043,8 +2038,26 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -2111,6 +2124,16 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
