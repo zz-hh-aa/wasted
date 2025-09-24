@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wasted</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="flex flex-col md:flex-row m-0 h-[30rem] md:h-1/2">
+        <div class="flex flex-col w-full h-full md:w-1/2 p-2 pt-20 bg-wasted-grey text-wasted-lime">
+            <!-- <h1 class="text-4xl">wasted</h1> -->
+            <img 
+                class="md:ml-auto h-[10rem] md:h-[16rem] w-auto"
+                src="graphics/xin-green.svg" 
+                alt="xin" />
+            <div class="flex flex-row items-baseline mt-4 mb-4 h-[7rem]">
+                <img 
+                    class="ml-auto mt-auto h-[3rem] md:h-[7rem] w-auto "
+                    src="graphics/was-green.svg" 
+                    alt="wasted" />
+                <img
+                    class="mr-auto mt-auto h-[3rem] md:h-[7rem] w-auto  visible md:hidden"
+                    src="graphics/ted-green.svg" 
+                    />
+            </div>
+            <div class="flex flex-row items-center md:ml-auto h-[3rem] mt-4">
+                <div class="flex flex-row items-center m-auto gap-4 md:hidden">
+                    <h2 class="text-3xl md:text-4xl m-auto md:ml-auto">Play</h2>
+                    <img 
+                        class="mr-auto h-[2rem] visible md:hidden"
+                        src="graphics/play-green.svg" 
+                        alt="'play" />
+                </div>
+                <h2 class="text-3xl md:text-4xl m-auto hidden md:block md:ml-auto">Play</h2>
+            </div>
+        </div>
+        <div class="flex flex-col w-full h-full invisible md:visible md:w-1/2 p-2 pt-20 bg-wasted-grey md:bg-wasted-lime">
+            <img 
+                class="mr-auto h-[16rem] w-auto"
+                src="graphics/nix-grey.svg" 
+                alt="mirror image of 'xin'" />
+            <div class="flex items-baseline mt-4 mb-4 h-[7rem]">
+                <img 
+                    class="mr-auto h-[7rem] w-auto"
+                    src="graphics/ted-grey.svg" 
+                    alt="'wasted' flipped" />
+            <!-- <div class="h-[52px]"></div> -->
+            </div>
+            <div class="mr-auto p-2 mt-4">
+                <img 
+                    class="mr-auto h-[3rem] w-auto"
+                    src="graphics/play-grey.svg" 
+                    alt="'play" />
+            </div>
+        </div>
+    </header>
+    
+    <main class="flex-grow flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 bg-wasted-grey p-6 text-wasted-lime">
+            <div class="flex flex-row py-2 my-2">
+                <img 
+                    class="pr-2 h-[4rem] w-auto"
+                    src="graphics/icon-1-green.svg" 
+                    alt="little friendly icon" />
+                <h2 class="text-3xl my-4">a) hospicing dance music</h2>
+            </div>
+            <div id="hospicing-content" class="markdown-content"></div>
+        </div>
+        <div class="w-full md:w-1/2 bg-wasted-lime p-6 text-wasted-grey">
+            <div class="flex flex-row py-2 my-2">
+                <img 
+                    class="pr-2 h-[4rem] w-auto"
+                    src="graphics/icon-2-grey.svg" 
+                    alt="little friendly icon" />
+                <h2 class="text-3xl my-4">b) unsustainability</h2>
+            </div>
+            <div id="unsustainability-content" class="markdown-content"></div>
+        </div>
+    </main>
+
+    <footer class="flex flex-col md:flex-row">
+        <div class="p-6 w-full md:w-1/2 bg-wasted-lime md:bg-wasted-grey text-wasted-grey md:text-wasted-lime">
+            <div class="max-w-[400px]">
+            <p>Credits: <br>
+            Music written & produced by xin<br>
+            Hospicing & Unsustainability written by xin<br>
+            Line edits by Geoff Mak<br>
+            Designed by Amos Turner<br>
+            Mastering by Ike Zwanikken<br>
+            Thanks to: queer-feminist teachers; Amos, Geoff & Ike for helping realise WASTED; Angus for the violin; Nono for early feedback; Fran & Jay for the introduction to <em>Hospicing</em>; friends for laughing and dancing; Aya for ears, support, laughter and very much more. <br>
+            Released by Appendix.files 2025</p>
+            </div>
+        </div>
+        <div class="md:w-1/2 md:bg-wasted-lime">
+        </div>
+    </footer>
+    
+    <script>
+        async function loadMarkdownContent(filePath, elementId) {
+            try {
+                const response = await fetch(filePath);
+                const text = await response.text();
+                const parsedContent = marked.parse(text);
+                const sanitizedContent = DOMPurify.sanitize(parsedContent, {
+                    USE_PROFILES: { html: true },
+                    FORBID_TAGS: ['script', 'style', 'iframe', 'frame', 'object', 'embed'],
+                    FORBID_ATTR: ['onerror', 'onload', 'onclick', 'onmouseover']
+                });
+                document.getElementById(elementId).innerHTML = sanitizedContent;
+            } catch (error) {
+                console.error(`Error loading markdown from ${filePath}:`, error);
+            }
+        }
+
+        loadMarkdownContent('texts/hospicing.md', 'hospicing-content');
+        loadMarkdownContent('texts/unsustainability.md', 'unsustainability-content');
+    </script>
+</body>
+</html>
