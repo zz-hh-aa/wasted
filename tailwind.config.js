@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'wasted-grey': "#fefefe", // D7D6D6
-        'wasted-green': "#91992d", // 717821
+        'wasted-grey': "#E8E6E7", 
+        'wasted-lime': "#BABB15", 
+        'wasted-camo': "#61623B"
       },
     },
   },

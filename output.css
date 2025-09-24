@@ -1891,7 +1891,7 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-wasted-green {
+.bg-wasted-lime {
   --tw-bg-opacity: 1;
   background-color: rgb(145 153 45 / var(--tw-bg-opacity, 1));
 }
@@ -2194,7 +2194,7 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
 }
 
-.text-wasted-green {
+.text-wasted-lime {
   --tw-text-opacity: 1;
   color: rgb(145 153 45 / var(--tw-text-opacity, 1));
 }
@@ -2696,7 +2696,7 @@ video {
     justify-items: end;
   }
 
-  .md\:bg-wasted-green {
+  .md\:bg-wasted-lime {
     --tw-bg-opacity: 1;
     background-color: rgb(145 153 45 / var(--tw-bg-opacity, 1));
   }
@@ -2711,7 +2711,7 @@ video {
     line-height: 2.5rem;
   }
 
-  .md\:text-wasted-green {
+  .md\:text-wasted-lime {
     --tw-text-opacity: 1;
     color: rgb(145 153 45 / var(--tw-text-opacity, 1));
   }
