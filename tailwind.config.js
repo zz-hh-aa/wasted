@@ -10,7 +10,11 @@ module.exports = {
         'wasted-lime': "#BABB15", 
         'wasted-camo': "#61623B"
       },
+      fontFamily: {
+        'geologica': ['Geologica', 'sans-serif'],
     },
+    },
+
   },
   plugins: [],
 }
