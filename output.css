@@ -683,6 +683,10 @@ video {
   z-index: -10;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -911,10 +915,6 @@ video {
   height: 10rem;
 }
 
-.h-\[16rem\] {
-  height: 16rem;
-}
-
 .h-\[2rem\] {
   height: 2rem;
 }
@@ -945,6 +945,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
 }
 
 .min-h-screen {
@@ -1976,6 +1980,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-wasted-camo {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 98 59 / var(--tw-bg-opacity, 1));
+}
+
 .bg-wasted-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(232 230 231 / var(--tw-bg-opacity, 1));
@@ -1984,11 +1993,6 @@ video {
 .bg-wasted-lime {
   --tw-bg-opacity: 1;
   background-color: rgb(186 187 21 / var(--tw-bg-opacity, 1));
-}
-
-.bg-wasted-camo {
-  --tw-bg-opacity: 1;
-  background-color: rgb(97 98 59 / var(--tw-bg-opacity, 1));
 }
 
 .decoration-slice {
@@ -2109,6 +2113,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2226,6 +2234,10 @@ video {
   font-weight: 700;
 }
 
+.font-thin {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2303,6 +2315,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
 }
 
+.text-wasted-camo {
+  --tw-text-opacity: 1;
+  color: rgb(97 98 59 / var(--tw-text-opacity, 1));
+}
+
 .text-wasted-grey {
   --tw-text-opacity: 1;
   color: rgb(232 230 231 / var(--tw-text-opacity, 1));
@@ -2316,11 +2333,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-wasted-camo {
-  --tw-text-opacity: 1;
-  color: rgb(97 98 59 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2826,19 +2838,14 @@ video {
     flex-direction: row;
   }
 
-  .md\:bg-wasted-grey {
-    --tw-bg-opacity: 1;
-    background-color: rgb(232 230 231 / var(--tw-bg-opacity, 1));
-  }
-
-  .md\:bg-wasted-lime {
-    --tw-bg-opacity: 1;
-    background-color: rgb(186 187 21 / var(--tw-bg-opacity, 1));
-  }
-
   .md\:bg-wasted-camo {
     --tw-bg-opacity: 1;
     background-color: rgb(97 98 59 / var(--tw-bg-opacity, 1));
+  }
+
+  .md\:bg-wasted-grey {
+    --tw-bg-opacity: 1;
+    background-color: rgb(232 230 231 / var(--tw-bg-opacity, 1));
   }
 
   .md\:px-6 {
@@ -2864,11 +2871,6 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-wasted-lime {
-    --tw-text-opacity: 1;
-    color: rgb(186 187 21 / var(--tw-text-opacity, 1));
   }
 
   .md\:text-wasted-camo {

@@ -12,7 +12,10 @@ module.exports = {
       },
       fontFamily: {
         'geologica': ['Geologica', 'sans-serif'],
-    },
+      },
+      fontWeight: {
+        'thin': '300',
+      },
     },
 
   },
