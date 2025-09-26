@@ -671,6 +671,10 @@ video {
   top: 66.666667%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2158,6 +2162,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-left {
