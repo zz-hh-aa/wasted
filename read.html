@@ -81,7 +81,7 @@
                     alt="little friendly icon" />
                 <h2 class="text-3xl my-4 font-geologica">a) hospicing dance music</h2>
             </div>
-            <div id="hospicing-content" class="markdown-content font-geologica font-thin"></div>
+            <div id="hospicing-content" class="markdown-content w-full font-geologica font-thin text-wasted-camo prose prose-wasted [&_a]:text-wasted-camo text-justify"></div>
         </div>
         <div class="w-full md:w-1/2 bg-wasted-camo p-6 text-wasted-grey">
             <div class="flex flex-row py-2 my-2">
@@ -91,7 +91,7 @@
                     alt="little friendly icon" />
                 <h2 class="text-3xl my-4 font-geologica">b) unsustainability</h2>
             </div>
-            <div id="unsustainability-content" class="markdown-content font-geologica font-thin"></div>
+            <div id="unsustainability-content" class="markdown-content w-full font-geologica font-thin text-wasted-grey prose prose-wasted [&_a]:text-wasted-grey text-justify"></div>
         </div>
     </main>
 
@@ -117,6 +117,7 @@
     </footer>
     
     <script>
+        marked.setOptions({ breaks: true });
         async function loadMarkdownContent(filePath, elementId) {
             try {
                 const response = await fetch(filePath);
