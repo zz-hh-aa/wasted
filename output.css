@@ -1503,6 +1503,10 @@ video {
   margin: auto;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1755,6 +1759,10 @@ video {
 
 .max-w-\[400px\] {
   max-width: 400px;
+}
+
+.max-w-none {
+  max-width: none;
 }
 
 .flex-shrink {
@@ -2899,6 +2907,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-0 {
