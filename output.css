@@ -5391,6 +5391,10 @@ video {
   }
 }
 
+.\[\&_a\]\:font-thin a {
+  font-weight: 300;
+}
+
 .\[\&_a\]\:text-wasted-camo a {
   --tw-text-opacity: 1;
   color: rgb(97 98 59 / var(--tw-text-opacity, 1));
