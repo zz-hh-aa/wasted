@@ -16,7 +16,7 @@ Last year, I encountered a book called *Hospicing Modernity*. (Thanks [Jay Sprin
 
 While writing ‘Unsustainability’ and grappling with how our dance music practices and industry were not sustainable on seemingly any level (from personal precarity and hurt to global ecological crisis), reading *Hospicing* changed how I was sensing, feeling and imagining all of this change. In the book, Vanessa Machado de Oliveira advocates for “learning to offer palliative care to modernity dying within and around us;” acknowledging that:
 
-> “most people will not willingly let go of the enjoyments and securities afforded by modernity: they will not voluntarily part with harmful habits of being that are extremely pleasurable. However, our collective unconscious knows that the enjoyments and securities promised by modernity cannot be endlessly sustained.”
+> most people will not willingly let go of the enjoyments and securities afforded by modernity: they will not voluntarily part with harmful habits of being that are extremely pleasurable. However, our collective unconscious knows that the enjoyments and securities promised by modernity cannot be endlessly sustained.
 > 
 
 A lifelong love of mine, dance music (as we know it) is one such ‘enjoyment’. Yes, with its glitz of individual ego and genius—but also with its spectacular, platform-mediated sheen and its fashion and conspicuous consumerism. I know many will not be able to let it and its extractive practices go easily.

@@ -5158,6 +5158,11 @@ video {
   font-style: italic;
 }
 
+.prose-blockquote\:text-wasted-camo :is(:where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(97 98 59 / var(--tw-text-opacity, 1));
+}
+
 .prose-blockquote\:text-wasted-grey :is(:where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(232 230 231 / var(--tw-text-opacity, 1));
