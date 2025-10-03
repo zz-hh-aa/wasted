@@ -5154,6 +5154,10 @@ video {
   font-weight: 700;
 }
 
+.prose-blockquote\:font-thin :is(:where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-weight: 300;
+}
+
 .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-style: italic;
 }
