@@ -1427,6 +1427,10 @@ video {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-2\/3 {
   top: 66.666667%;
 }
@@ -1764,6 +1768,10 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -3531,6 +3539,55 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-outline-camo {
+  scrollbar-width: thin;
+  scrollbar-color: #61623B00 #0000;
+}
+
+.scrollbar-outline-camo::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.scrollbar-outline-camo::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid #61623B;
+  border-radius: 8px;
+}
+
+.scrollbar-outline-camo::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-outline-grey {
+  scrollbar-width: thin;
+  scrollbar-color: #E8E6E700 #0000;
+}
+
+.scrollbar-outline-grey::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.scrollbar-outline-grey::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid #E8E6E7;
+  border-radius: 8px;
+}
+
+.scrollbar-outline-grey::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .\[a-zA-Z\:_\] {
@@ -5324,6 +5381,14 @@ video {
     height: 7rem;
   }
 
+  .md\:h-\[calc\(100vh-15rem\)\] {
+    height: calc(100vh - 15rem);
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -5350,6 +5415,10 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
   }
 
   .md\:bg-wasted-camo {

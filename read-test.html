@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wasted</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/x-icon" href="graphics/xin-icon-lime.svg">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="">
+        <!-- XIN GRAPHIC -->
+        <img 
+            class="hidden md:block absolute z-10 h-[15rem] p-10"
+            src="graphics/xin-icon-camo.svg"
+            alt="a little angular figure">
+        <!-- MAIN HEADER -->
+        <div class="flex flex-col md:flex-row m-0 h-1/3 md:h-[15rem]">
+            <!-- GREY BLOCK -->
+            <div class="flex flex-col w-full md:w-1/2 p-2 pt-10 md:pt-20 bg-wasted-grey text-wasted-camo">
+                <!-- WASTED 1 -->
+                <div class="flex flex-row items-baseline mx-4 md:my-4 md:h-[7rem]">
+                    <!-- SHOWN ON MOBILE -->
+                    <img 
+                        class="block md:hidden h-[3rem]"
+                        src="graphics/xin-icon-camo.svg"
+                        alt="a little angular figure">
+                    <!-- BLOCK -->
+                    <img 
+                        class="ml-auto mt-auto h-[3rem] md:h-[7rem] w-auto"
+                        src="graphics/was-camo.svg" 
+                        alt="wasted" />
+                    <!-- HIDDEN ON MOBILE -->
+                        <img
+                        class="mr-auto mt-auto h-[3rem] md:h-[7rem] w-auto  visible md:hidden"
+                        src="graphics/ted-camo.svg" 
+                        />
+                </div>
+                <!-- PLAY -->
+                <div class="flex flex-row hidden md:block md:ml-auto h-[4rem] p-2 mt-4">
+                    <div class="flex flex-row items-center m-auto gap-4 md:hidden">
+                        <h2 class="text-3xl md:text-4xl m-auto md:ml-auto">Play</h2>
+                        <img 
+                            class="mr-auto h-[2rem] visible md:hidden"
+                            src="graphics/play-green.svg" 
+                            alt="'play" />
+                    </div>
+                    <h2 class="text-3xl m-auto hidden md:block md:ml-auto">Play</h2>
+                </div>
+            </div>
+            <!-- CAMO BLOCK -->
+            <div class="flex flex-col w-full hidden md:block md:w-1/2 p-2 md:pt-20 bg-wasted-grey md:bg-wasted-camo">
+                <!-- WASTED 2 -->
+                <div class="flex flex-row items-baseline md:my-4 md:h-[7rem]">
+                    <!-- BLOCK -->
+                    <img 
+                        class="mr-auto mt-auto h-[3rem] md:h-[7rem] w-auto"
+                        src="graphics/ted-grey.svg" 
+                        alt="'wasted' flipped" />
+                </div>
+                <!-- PLAY -->
+                <div class="flex mr-auto h-[4rem] p-2 mt-4 items-end">
+                    <img 
+                        class="mr-auto h-[2rem] w-auto"
+                        src="graphics/play-grey.svg" 
+                        alt="play" />
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="flex-grow flex flex-col md:flex-row
+    md:h-[calc(100vh-15rem)] md:overflow-hidden">
+        <!-- GREY -->
+        <div id="hospicing"
+            class="flex flex-col w-full md:w-1/2 bg-wasted-grey p-6 text-wasted-camo
+            md:h-full">
+            <div class="flex flex-row sticky top-0 items-center py-2 my-2 bg-wasted-grey justify-between md:justify-start md:gap-4">
+                <img 
+                    class="pr-2 h-[2rem] md:h-[4rem] w-auto"
+                    src="graphics/icon-1-camo.svg" 
+                    alt="little friendly icon" />
+                <h2 class="text-xl md:text-3xl my-4 font-geologica">hospicing dance music</h2>
+                <a href="#unsustainability" class="h-[2rem] block md:hidden">
+                    <img 
+                        class="pr-2 h-full w-auto"
+                        src="graphics/icon-2-camo-outline.svg" 
+                        alt="little friendly icon" />
+                    </a>
+            </div>
+            <!-- SCROLLABLE DIV -->
+            <div class="flex-1 overflow-y-auto scrollbar-outline-camo">
+                <div id="hospicing-content" class="markdown-content p-2 max-w-none w-full font-geologica font-thin text-wasted-camo prose prose-wasted prose-blockquote:text-wasted-camo prose-blockquote:font-thin [&_a]:text-wasted-camo [&_a]:font-thin text-justify"></div>
+            </div>
+        </div>
+        <!-- CAMO -->
+        <div id="unsustainability"
+            class="flex flex-col w-full md:w-1/2 bg-wasted-camo p-6 text-wasted-grey
+            md:h-full">
+            <div class="flex flex-row sticky top-0 items-center py-2 my-2 bg-wasted-camo justify-between md:justify-start">
+                <img 
+                class="hidden md:block pr-2 h-[2rem] md:h-[4rem] w-auto"
+                src="graphics/icon-2-grey.svg" 
+                alt="little friendly icon" />
+                <a href="#hospicing" class="block md:hidden h-[2rem]">
+                    <img 
+                        class="pr-2 h-full w-auto"
+                        src="graphics/icon-1-grey-outline.svg" 
+                        alt="little friendly icon" />
+                    </a>
+                <h2 class="text-xl md:text-3xl my-4 font-geologica">unsustainability</h2>
+                <img 
+                class="block md:hidden pr-2 h-[2rem] md:h-[4rem] w-auto"
+                src="graphics/icon-2-grey.svg" 
+                alt="little friendly icon" />
+            </div>
+            <!-- SCROLLABLE DIV -->
+            <div class="flex-1 overflow-y-auto scrollbar-outline-grey">
+                <div id="unsustainability-content" class="markdown-content p-2 max-w-none w-full font-geologica font-thin text-wasted-grey prose prose-wasted prose-blockquote:text-wasted-grey prose-blockquote:font-thin [&_a]:text-wasted-grey [&_a]:font-thin text-justify"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="flex flex-col md:flex-row mt-auto">
+        <div class="flex p-6 w-full md:w-1/2 bg-wasted-camo font-geologica font-thin md:bg-wasted-grey text-wasted-grey md:text-wasted-camo">
+            <div class="max-w-[400px]">
+                <p class="">Listen via Bandcamp, Subvert, Nina.</p>
+                <p class="pt-2">Credits: <br>
+                Music written & produced by xin<br>
+                Hospicing & Unsustainability written by xin<br>
+                Line edits by Geoffrey Mak<br>
+                Designed by Amos Turner<br>
+                Mastering by Ike Zwanikken<br>
+                Thanks to: queer-feminist teachers; Amos, Geoffrey & Ike for helping realise WASTED; Angus for the violin; Fran & Jay for the introduction to <em>Hospicing</em>; Nono for much fertilisier and early 'Hospicing' feedback; James for wisdom and advice; friends for laughing and dancing; Aya for ears, support, laughter and very much more. <br>
+                </p>
+                <p class="pt-2">Released by Appendix.files 2025</p>
+            </div>
+            <!-- <div class="font-geologica text-wasted-camo ml-auto px-0 py-5">Appendix</div> -->
+        </div>
+        <div class="md:w-1/2 md:bg-wasted-camo"> 
+            <!--<div class="font-geologica text-wasted-grey mr-auto px-0 py-5">.files 2025</div> -->
+        </div> 
+    </footer>
+    
+    <script>
+        marked.setOptions({ breaks: true });
+        async function loadMarkdownContent(filePath, elementId) {
+            try {
+                const response = await fetch(filePath);
+                const text = await response.text();
+                const parsedContent = marked.parse(text);
+                const sanitizedContent = DOMPurify.sanitize(parsedContent, {
+                    USE_PROFILES: { html: true },
+                    FORBID_TAGS: ['script', 'style', 'iframe', 'frame', 'object', 'embed'],
+                    FORBID_ATTR: ['onerror', 'onload', 'onclick', 'onmouseover']
+                });
+                document.getElementById(elementId).innerHTML = sanitizedContent;
+            } catch (error) {
+                console.error(`Error loading markdown from ${filePath}:`, error);
+            }
+        }
+
+        loadMarkdownContent('texts/hospicing.md', 'hospicing-content');
+        loadMarkdownContent('texts/unsustainability.md', 'unsustainability-content');
+    </script>
+</body>
+</html>
