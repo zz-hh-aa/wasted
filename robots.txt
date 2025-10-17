@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wasted.reluctant.promo/sitemap.xml
+Host: wasted.reluctant.promo
