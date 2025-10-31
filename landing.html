@@ -1,94 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-screen overflow-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wasted</title>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="graphics/xin-icon-lime.svg">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
 </head>
 
-<body>
-    <main class="flex flex-row w-screen h-screen">
-        <!-- LIME PANEL -->
-        <div class="flex flex-col w-1/2 bg-wasted-grey text-wasted-lime">
-            <div class="flex flex-col md:w-2/3 h-2/3 px-1 md:px-6 my-auto ml-auto">
-                <!-- XIN ICON -->
-                <div>
-                    <img 
-                        class="ml-auto h-[10rem] md:h-[20rem] w-auto "
-                        src="graphics/xin-icon-lime.svg" 
-                        alt="xin" />
-                </div>
-                <!-- WASTED -->
-                <div class="flex flex-row items-baseline mt-8 md:mt-4 mb-4">
-                    <img 
-                        class="ml-auto mt-auto h-[3rem] md:h-[10rem] w-auto "
-                        src="graphics/was-lime.svg" 
-                        alt="wasted" />
-                </div>
-                <!-- ICONS -->
-                <div class="flex flex-row items-baseline md:w-2/3 gap-2 mx-2 mt-10 mb-4 h-[7rem] justify-between ml-auto">
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-1-lime.svg" 
-                        alt="a sharp, pointed cartoon icon in lime" />
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-2-lime.svg" 
-                        alt="a curved, flowery cartoon icon in lime" />
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-3-lime.svg" 
-                        alt="a baroque cartoon icon in lime" />
-                </div>
-                <!-- ACTIONS -->
-                <div class="mx-auto">
-                    <h2 class="font-geologica text-3xl">Read</h2>
-                </div>
-             </div>
-        <div class="font-geologica text-wasted-lime ml-auto px-0 py-5">Appendix</div>
+<body class="flex flex-col h-screen w-screen bg-wasted-grey overflow-hidden">
+    <!-- background svg -->
+    <img 
+        src="graphics/holding-page/APPX.svg" 
+        alt="" 
+        class="absolute hidden md:block left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/2 w-[90vw] -z-10 pointer-events-none select-none"
+        aria-hidden="true"
+    />
+    <img 
+        src="graphics/holding-page/APPX-mobile.svg" 
+        alt="" 
+        class="absolute block right-0 md:hidden w-screen overflow-hidden"
+        aria-hidden="true"
+    />
+    <!-- <div class="h-1/5 md:hidden"></div> -->
+    <div class="flex flex-col my-auto h-2/3 mx-auto w-4/5 gap-8">
+        <!-- xin -->
+        <div class="">
+            <img 
+                class="mx-auto w-4/5 md:h-[16rem] w-auto"
+                src="graphics/holding-page/xin.svg" 
+                alt="xin" />
+        </div> 
+        <!-- wasted -->
+        <div class="">
+            <img 
+                class="mx-auto h-full h-[10rem] md:h-[12rem] md:w-auto"
+                src="graphics/holding-page/wasted.svg" 
+                alt="wasted" />
+            <h1 class="sr-only">wasted</h1>
         </div>
-        <!-- GREY PANEL -->
-        <div class="flex flex-col w-1/2 bg-wasted-lime text-wasted-grey">
-            <div class="flex flex-col md:w-2/3 h-2/3 px-1 md:px-6 my-auto mr-auto">
-                <!-- XIN ICON -->
-                <img 
-                    class="mr-auto h-[10rem] md:h-[20rem] w-auto "
-                    src="graphics/xin-icon-grey.svg" 
-                    alt="xin" />
-                <!-- WASTED -->
-                <div class="flex flex-row items-baseline mt-8 md:mt-4 mb-4">
-                    <img 
-                        class="mr-auto mt-auto h-[3rem] md:h-[10rem] w-auto "
-                        src="graphics/ted-grey.svg" 
-                        alt="wasted" />
-                </div>
-                <!-- ICONS -->
-                <div class="flex flex-row items-baseline gap-2 md:w-2/3 mx-2 mt-10 mb-4 h-[7rem] justify-between mr-auto">
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-4-grey.svg" 
-                        alt="a curved, 8-bit-like cartoon icon in grey" />
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-5-grey.svg" 
-                        alt="an 8-bit, angular cartoon icon in grey" />
-                    <img 
-                        class="h-[3rem] md:h-[4rem]"
-                        src="graphics/icon-6-grey.svg" 
-                        alt="a jagged cartoon icon in grey" />
-                </div>
-                <!-- ACTIONS -->
-                <div class="mx-auto">
-                    <h2 class="font-geologica text-3xl">Listen</h2>
-                </div>
-            </div>
-        <div class="font-geologica text-wasted-grey mr-auto px-0 py-5">.files 2025</div>
+        <!-- icons -->
+        <div class="flex flex-row md:py-8 w-full md:max-w-[66vw] md:h-[10rem] mx-auto justify-between">
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-1.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-2.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-3.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-4.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-5.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/icon-6.svg" 
+                alt="" />
+            <img 
+                class="h-[2rem] md:h-[4rem]"
+                src="graphics/holding-page/play.svg" 
+                alt="" />
         </div>
-    </main>
+        <!-- text -->
+        <div class="flex text-center mx-auto text-wasted-lime"> 
+            <h2 class="text-wasted-lime font-geologica md:text-3xl md:text-2xl"><a href="https://appendixfiles.bandcamp.com/album/appx-xin01-wasted"><u>Out October 31st 2025 — Pre-order here</u></a></h2>
+        </div>
+    </div>
+    <footer class="absolute bottom-0 w-full z-20 flex text-center mx-auto h-[3rem]">
+        <h3 class="text-wasted-lime font-geologica md:text-2xl md:text-xl my-auto mx-auto"><a href="https://www.appendixfiles.com/">Appendix.files 2025</a></h3>
+    </footer>
 </body>
 </html>
