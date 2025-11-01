@@ -1765,10 +1765,6 @@ video {
   max-width: none;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -5327,8 +5323,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:static {
-    position: static;
+  .md\:relative {
+    position: relative;
   }
 
   .md\:my-4 {
@@ -5384,10 +5380,6 @@ video {
     height: calc(100vh - 15rem);
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -5414,10 +5406,6 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:overflow-hidden {
-    overflow: hidden;
   }
 
   .md\:bg-wasted-camo {
